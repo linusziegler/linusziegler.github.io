@@ -54,7 +54,8 @@
 }
 
 :root {
-    font-size: min(16px, 1.8vh, 1.5vw);
+    font-size: min(16px, 1.8vh);
+    --title-size: min(9rem,15vw);
 }
 
 html,
@@ -158,8 +159,8 @@ section {
 .sub-title {
     flex-grow: 1;
     font-family: 'BasierCircle-medium';
-    font-size: 9rem;
-    letter-spacing: -.6rem;
+    font-size: var(--title-size);
+    letter-spacing: calc(var(--title-size) * -.06);
     margin-top: -.2rem;
 }
 
